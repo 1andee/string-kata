@@ -11,5 +11,12 @@ RSpec.describe StringCalculator, "#add" do
     expect(StringCalculator.add("")).to eql(0)
   end
 
+  it "returns the value of a single digit" do
+    (0..9).each do |digit|
+      expect(StringCalculator.add(digit.to_s)).to eql(digit)
+    end
+  end
+
   # more tests go here
+  
 end
