@@ -17,6 +17,10 @@ RSpec.describe StringCalculator, "#add" do
     end
   end
 
+  it "returns the sum of two digits when separated by a comma" do
+    expect(StringCalculator.add("1,2")).to eql(3)
+    expect(StringCalculator.add("7,9")).to eql(16)
+  end
+
   # more tests go here
-  
 end
