@@ -43,4 +43,14 @@ RSpec.describe StringCalculator, "#add" do
     expect(StringCalculator.add("1\n2,3")).to eql(4)
   end
 
+  # Requirement 7
+  it "treats a character preceded by two slashes on the first line as a delimiter" do
+    expect(StringCalculator.add("//;\n2;5")).to eql(7)
+  end
+
+  # Requirement 8
+  # it "throws an exception when negative integers are entered" do
+  #   expect(StringCalculator.add("2, -2")).to raise_error
+  # end
+
 end
