@@ -31,4 +31,11 @@ RSpec.describe StringCalculator, "#add" do
     expect(StringCalculator.add("42,159")).to eql(201)
   end
 
+  # Requirement 5
+  it "returns the sum of multiple strings of digits when separated by commas" do
+    expect(StringCalculator.add("1558,2,2442")).to eql(4002)
+    expect(StringCalculator.add("15,22,45,79")).to eql(161)
+    expect(StringCalculator.add("2")).to eql(2)
+  end
+
 end

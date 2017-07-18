@@ -2,10 +2,8 @@ module StringCalculator
 
   def self.add(string)
     return string.to_i unless string.include? ","
-    (a, b) = string.split(",")
-    a.to_i + b.to_i
+    digit_strings = string.split(",")
+    digit_strings.inject(0) { |t,s| t + s.to_i }
   end
-
-  # ...and here when the above becomes too complex.
 
 end
