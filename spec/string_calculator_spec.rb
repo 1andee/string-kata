@@ -50,7 +50,8 @@ RSpec.describe StringCalculator, "#add" do
 
   # Requirement 8
   # it "throws an exception when negative integers are entered" do
-  #   expect(StringCalculator.add("2, -2")).to raise_error
+  #   expect { (StringCalculator.add("5, 120, -2")) }.to raise_error("Cannot handle negative numbers")
+  #   expect { (StringCalculator.add("16, -50, 3")) }.to raise_error("Cannot handle negative numbers")
   # end
 
 end

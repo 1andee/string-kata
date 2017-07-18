@@ -17,7 +17,7 @@ module StringCalculator
 
   # def self.to_i_with_raise(string)
   #   i = string.to_i_with_raise
-  #   raise "Oh no" if i < 0
+  #   raise "Cannot handle negative numbers" if i < 0
   # end
 
 end
